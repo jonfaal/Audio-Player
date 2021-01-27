@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(60, 54, 65);
+}
+
+main{
+    margin: auto;
+    padding-top: 15%;
+    width: 100%;
+}
+
+#vitrola{
+    width: 70vmin;
+    height: 50vmin;
+    margin: auto;
+    border-radius: 30px;
+    border-left: solid 5px rgb(97, 97, 97);
+    border-bottom: solid 10px rgb(59, 59, 59) ;
+    overflow: hidden;
+    display: flex;
+    background-color: rgb(78, 78, 78);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
+}
+
+#divA{
+    width: 20%;
+    height: 100%;
+    z-index: 1;
+}
+
+#divB{
+    width: 60%;
+    height: 100%;
+}
+
+#divC{
+    width: 20%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#painel{
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    position: relative;
+    top: 10%;
+    margin: auto;
+    background-color: rgb(87, 87, 87);
+}
+
+#botoes{
+    height: 70%;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botao{
+    width: 70%;
+    padding: .5vmin;
+    margin: 5px;
+    border-radius: 20%;
+}
+
+.outer-shadow{
+
+    box-shadow: 1px 1px 4px rgb(39, 31, 43),  -1px -1px 4px rgba(241, 255, 191, 0.219) ;
+}
+
+.inner-shadow{
+    
+    box-shadow: -2px -2px 2px rgb(0, 0, 0),  2px 2px 2px rgba(255, 255, 255, 0.219) ;
+}
+
+#vinil{
+    height: 90%;
+    position: relative;
+    right: 10%;
+    transform: rotate(0deg);
+    filter: drop-shadow(2px 2px 15px rgba(0, 0, 0, 0.432));
+}
+
+
+#agulha{
+    height: 90%;
+    position: relative;
+    left: 30%;
+    bottom: -5%;
+    transform: rotate(0deg);
+    transform-origin: 50% 80%;
+    filter: drop-shadow(2px 2px 15px rgba(0, 0, 0, 0.432));
+    transition: 2s;
+}
+
+
+@media screen and (max-width:380px){
+
+#vitrola{
+    width: 90vmin;
+    height: 65vmin;
+}
+
+.botao{
+    width: 100%;
+    padding: 4px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+}

@@ -13,7 +13,7 @@ function play(){
     if(ang == 0){
     ang = 12;
     }
-    if(!intervaloAgulha){
+    
     agulha.style = "transform: rotate("+ang+"deg)"; 
     
     intervaloAgulha = setInterval(function (){
@@ -29,7 +29,7 @@ function play(){
     }, 1);
 }
 
-}
+
 
 function pause(){
     music.pause();

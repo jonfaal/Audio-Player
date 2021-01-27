@@ -71,7 +71,7 @@ main{
     width: 70%;
     padding: .5vmin;
     margin: 5px;
-    border-radius: 20%;
+    border-radius: 5px;
 }
 
 .outer-shadow{
@@ -115,8 +115,6 @@ main{
 .botao{
     width: 100%;
     padding: 4px;
-    margin: 5px;
-    border-radius: 50%;
 }
 
 }

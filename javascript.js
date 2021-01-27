@@ -1,6 +1,11 @@
 var music = document.querySelector('#player');
 var agulha = document.querySelector('#agulha');
 var vinil = document.querySelector('#vinil');
+
+var btnPlay = document.querySelector('#play');
+var btnPause = document.querySelector('#pause');
+var btnStop = document.querySelector('#stop');
+
 var intervaloVinil;
 var intervaloAgulha;
 let rot = 0;
@@ -26,10 +31,11 @@ function play(){
             if(ang == 34){
     
                 ang = 40; 
-                setTimeout(stop, 3000)
+                agulha.style = "transition: 1s; transform: rotate("+ang+"deg)"; 
+                
+                setTimeout(stop, 2000)
             }
     
-            console.log(ang)
         }, passoAgulha*1000);
     }
 
@@ -47,6 +53,9 @@ function play(){
         }, 1);
 
         state = "play";
+        btnPlay.className ="botao inner-shadow";
+        btnPause.className ="botao outer-shadow";
+        btnStop.className ="botao outer-shadow";
     }
 
 
@@ -55,17 +64,25 @@ function play(){
 
 
 function pause(){
-    state = "pause";
-    music.pause();
-    clearInterval(intervaloVinil);
-    clearInterval(intervaloAgulha);
-    rot += 10;
-    vinil.style = "transition: 1s; transform: rotate("+rot+"deg)"; 
+    if(state == 'play'){
+        state = "pause";
+        btnPlay.className ="botao outer-shadow";
+        btnPause.className ="botao inner-shadow";
+        btnPlay.className ="botao outer-shadow";
+        music.pause();
+        clearInterval(intervaloVinil);
+        clearInterval(intervaloAgulha);
+        rot += 10;
+        vinil.style = "transition: 1s; transform: rotate("+rot+"deg)"; 
+    }
     
 }
 
 function stop(){
     state = "stop";
+    btnPlay.className ="botao outer-shadow";
+    btnPause.className ="botao outer-shadow";
+    btnStop.className ="botao inner-shadow";
     music.pause()
     music.currentTime = 0;
 

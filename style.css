@@ -1,17 +1,16 @@
 @charset "UTF-8";
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgb(60, 54, 65);
     text-align: center;
 }
 
-.tag, a{
+.tag, a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #5982B0;
     font-size: 12px;
@@ -19,43 +18,43 @@ body{
     text-decoration: none;
 }
 
-main{
+main {
     margin: auto;
     padding-top: 15%;
     width: 100%;
 }
 
-#vitrola{
+#vitrola {
     width: 70vmin;
     height: 50vmin;
     margin: auto;
     border-radius: 30px;
     border-left: solid 5px rgb(97, 97, 97);
-    border-bottom: solid 10px rgb(59, 59, 59) ;
+    border-bottom: solid 10px rgb(59, 59, 59);
     overflow: hidden;
     display: flex;
     background-color: rgb(78, 78, 78);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
 }
 
-#divA{
+#divA {
     width: 20%;
     height: 100%;
     z-index: 1;
 }
 
-#divB{
+#divB {
     width: 60%;
     height: 100%;
 }
 
-#divC{
+#divC {
     width: 20%;
     height: 100%;
     vertical-align: middle;
 }
 
-#painel{
+#painel {
     width: 80%;
     height: 80%;
     border-radius: 10px;
@@ -65,7 +64,7 @@ main{
     background-color: rgb(87, 87, 87);
 }
 
-#botoes{
+#botoes {
     height: 70%;
     width: 60%;
     margin: auto;
@@ -76,24 +75,22 @@ main{
     align-items: center;
 }
 
-.botao{
+.botao {
     width: 70%;
     padding: .5vmin;
     margin: 5px;
     border-radius: 5px;
 }
 
-.outer-shadow{
-
-    box-shadow: 1px 1px 4px rgb(39, 31, 43),  -1px -1px 4px rgba(241, 255, 191, 0.219) ;
+.outer-shadow {
+    box-shadow: 1px 1px 4px rgb(39, 31, 43), -1px -1px 4px rgba(241, 255, 191, 0.219);
 }
 
-.inner-shadow{
-    
-    box-shadow: -1px -1px 4px rgb(39, 31, 43),  1px 1px 4px rgba(241, 255, 191, 0.219) ;
+.inner-shadow {
+    box-shadow: -1px -1px 4px rgb(39, 31, 43), 1px 1px 4px rgba(241, 255, 191, 0.219);
 }
 
-#vinil{
+#vinil {
     height: 90%;
     position: relative;
     right: 10%;
@@ -101,11 +98,10 @@ main{
     filter: drop-shadow(2px 2px 15px rgba(0, 0, 0, 0.432));
 }
 
-
-#agulha{
+#agulha {
     height: 90%;
     position: relative;
-    left: 30%;
+    left: 20%;
     bottom: -5%;
     transform: rotate(0deg);
     transform-origin: 50% 80%;
@@ -113,17 +109,13 @@ main{
     transition: 2s;
 }
 
-
-@media screen and (max-width:500px){
-
-#vitrola{
-    width: 90vmin;
-    height: 65vmin;
-}
-
-.botao{
-    width: 100%;
-    padding: 4px;
-}
-
+@media screen and (max-width:500px) {
+    #vitrola {
+        width: 90vmin;
+        height: 65vmin;
+    }
+    .botao {
+        width: 100%;
+        padding: 4px;
+    }
 }

@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Music Player</title>
 </head>
+
 <body>
     <main>
         <div id="vitrola">
             <div id="divA">
-                 <img id="agulha" src="./images/agulha.png" alt="">
+                <img id="agulha" src="./images/agulha.png" alt="">
             </div>
             <div id="divB">
-                 <img id="vinil" src="./images/vinyl.png" alt="">
+                <img id="vinil" src="./images/vinyl.png" alt="">
             </div>
             <div id="divC">
                 <div id="painel" class="outer-shadow">
 
                     <div id="botoes">
                         <img id="play" onclick="play()" class="botao outer-shadow" src="./images/play.png" alt="">
-                        <img id="pause" onclick="pause()"  class="botao outer-shadow" src="./images/pause.png" alt="">
-                        <img id="stop" onclick="stop()"  class="botao outer-shadow" src="./images/stop.png" alt="">
+                        <img id="pause" onclick="pause()" class="botao outer-shadow" src="./images/pause.png" alt="">
+                        <img id="stop" onclick="stop()" class="botao outer-shadow" src="./images/stop.png" alt="">
                     </div>
 
                 </div>
-                    <audio id="player">
-        <source src="./music/buffalo.mp3" type="audio/mpeg">
-        <source src="./music/buffalo.ogg" type="audio/ogg">
-    </audio>
+                <audio id="player">
+                    <source src="./music/music.wav" type="audio/wav">
+                </audio>
             </div>
         </div>
 
 
     </main>
-    <div class="tag" >
+    <div class="tag">
         <a href="https://jonfaal.com/link" target="_blank">Desenvolvido por Jonathan Fabris</a>
     </div>
 </body>
 <script src="./javascript.js"></script>
+
 </html>
